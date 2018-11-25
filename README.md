@@ -1,5 +1,8 @@
 # PyCOREM
-The PyCOREM object supplies some useful functions for interacting with the [COREM library for Retina modelling](https://github.com/pablomc88/COREM). It depends on **Numpy**. Please be aware that you should be familiar with COREM (check the wiki [here](https://github.com/pablomc88/COREM/wiki)) before using it.
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+The PyCOREM object supplies some useful functions for interacting with the [COREM library for Retina modelling](https://github.com/pablomc88/COREM) in Python. It depends on **Numpy**. Please be aware that you should be familiar with COREM (check the wiki [here](https://github.com/pablomc88/COREM/wiki)) before using it.
 
 To use this object, simply copy the pycorem.py file into the directory you are working from. In your file, import the PyCOREM object from the pycorem file, define the path to the directory the corem script is located at and initialize a new PyCOREM object for this directory:
 ```python
