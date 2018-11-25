@@ -1,11 +1,11 @@
 # PyCOREM
-The pycorem object supplies some useful functions for interacting with the [COREM library for Retina modelling](https://github.com/pablomc88/COREM). It depends on **Numpy**. Please be aware that you should be familiar with COREM (Check the wiki [here](https://github.com/pablomc88/COREM/wiki)) before using it.
+The PyCOREM object supplies some useful functions for interacting with the [COREM library for Retina modelling](https://github.com/pablomc88/COREM). It depends on **Numpy**. Please be aware that you should be familiar with COREM (Check the wiki [here](https://github.com/pablomc88/COREM/wiki)) before using it.
 
-To use this object, simply copy the pycorem.py file into the directory you are working from. In your file, import the pycorem object from the pycorem file, define the path to the main COREM library and initialize a new PyCOREM object for this directory:
+To use this object, simply copy the pycorem.py file into the directory you are working from. In your file, import the PyCOREM object from the pycorem file, define the path to the main COREM library and initialize a new PyCOREM object for this directory:
 ```python
-from pycorem import Pycorem
+from pycorem import PyCOREM
 path_corem = "/home/pscl/Documents/Uni/CompNeuroScience/COREM-master/COREM/"
-pc = Pycorem(path_corem)
+pc = PyCOREM(path_corem)
 ```
 
 PyCOREM offers the following functions:
@@ -48,10 +48,10 @@ This simply returns the eccentricity function used to scale the output of a spec
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
-from pycorem import Pycorem
+from pycorem import PyCOREM
 
 path_corem = "/home/pscl/Documents/Uni/CompNeuroScience/COREM-master/COREM/"
-pc = Pycorem(path_corem)
+pc = PyCOREM(path_corem)
 
 pc.generate_script(pc.hyper_params, pc.retina_params, name="script.corem")
 pc.call_script("script.corem", show=True)
