@@ -1,7 +1,7 @@
 import os, subprocess
 import numpy as np
 
-class Pycorem:
+class PyCOREM:
 
     def __init__(self, path_corem):
         self.path_corem = path_corem if path_corem[-1] is "/" else path_corem+"/"
